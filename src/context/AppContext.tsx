@@ -135,7 +135,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const [settings, setSettings] = useState<ClassSettings>(() => {
     const saved = getStorage('settings', initialSettings);
-    return { ...saved, totalStudentsTarget: 31 };
+    return {
+      ...saved,
+      totalStudentsTarget: 31,
+      teacherAvatarUrl: saved?.teacherAvatarUrl || '/assets/aistudio/image_d91f7d2f.png',
+    };
   });
 
   const [students, setStudents] = useState<Student[]>(() => {

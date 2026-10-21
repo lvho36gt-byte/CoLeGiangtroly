@@ -8,6 +8,7 @@ export const initialSettings: ClassSettings = {
   slogan: 'Công nghệ kết nối – Thấu hiểu yêu thương – Kiến tạo lớp 4 hạnh phúc',
   roomNumber: 'Phòng 204 - Dãy nhà B',
   totalStudentsTarget: 31,
+  teacherAvatarUrl: '/assets/aistudio/image_d91f7d2f.png',
 };
 
 export const initialStudents: Student[] = [

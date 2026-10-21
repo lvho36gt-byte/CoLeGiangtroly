@@ -109,20 +109,19 @@ export const HeroBanner: React.FC = () => {
             <div className="relative py-4 flex items-center justify-center">
               {/* Teacher Avatar Card */}
               <div className="relative z-20 flex flex-col items-center">
-                {settings.teacherAvatarUrl ? (
+                <div className="relative group">
                   <img
-                    src={settings.teacherAvatarUrl}
+                    src={settings.teacherAvatarUrl || '/assets/aistudio/image_d91f7d2f.png'}
                     alt={settings.teacherName}
-                    className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-xl"
+                    className="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl object-cover object-top border-4 border-white shadow-2xl ring-4 ring-sky-300/50 group-hover:scale-105 transition-all duration-300"
                   />
-                ) : (
-                  <div className="w-24 h-24 rounded-full bg-linear-to-tr from-sky-600 to-cyan-400 border-4 border-white shadow-xl flex items-center justify-center text-white text-3xl">
-                    👩‍🏫
+                  <div className="absolute -bottom-1 -right-1 bg-linear-to-tr from-[#1558AA] to-[#36B8F2] text-white p-1 rounded-full border-2 border-white shadow-md">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-300" />
                   </div>
-                )}
-                <div className="mt-2 bg-white/95 px-3 py-1 rounded-xl shadow-xs border border-sky-100 text-center">
-                  <p className="text-xs font-black text-sky-900">Cô giáo {settings.teacherName}</p>
-                  <p className="text-[10px] text-slate-500 font-semibold">Giáo viên Chủ nhiệm</p>
+                </div>
+                <div className="mt-2.5 bg-white/95 px-3.5 py-1 rounded-xl shadow-sm border border-sky-100 text-center">
+                  <p className="text-xs font-black text-sky-950">Cô giáo {settings.teacherName}</p>
+                  <p className="text-[10px] text-slate-500 font-bold">Giáo viên Chủ nhiệm</p>
                 </div>
               </div>
 
