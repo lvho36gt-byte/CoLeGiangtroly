@@ -1,0 +1,6 @@
+{
+  "name": "AI Đồng hành – Kiến tạo lớp 4 hạnh phúc",
+  "description": "Hệ sinh thái công tác chủ nhiệm số ứng dụng AI - Trường Tiểu học Khoái Châu 1, Lớp 4A4",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
